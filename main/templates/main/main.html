@@ -1,0 +1,561 @@
+{% load static %}
+{% load i18n %}
+{% load jalali_tags %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<!-- Mirrored from axo-html.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Apr 2023 22:28:33 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% trans "وبسایت شخصی دکتر بهزاد شوقی" %}</title>
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/font-awesome-pro.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+</head>
+<body>
+<div id="preloader">
+    <div class="loader_line"></div>
+</div>
+
+<header class="position-absolute w-100 text-white">
+    <div class="container">
+        <div class="logo tm-ltr">
+            <a href="/en">English</a>
+            |
+            <a href="/" >فارسی</a>
+        </div>
+        <ul class="menus">
+            <li class="current"><a href="#services">{% trans "خدمات" %}</a></li>
+            <li><a href="#portfolio">{% trans "افتخارات و امتیازات" %}</a></li>
+            <li><a href="#blog">{% trans "وبلاگ" %}</a></li>
+            <li><a href="#contact">{% trans "ارتباط با من" %}</a></li>
+            <li><a href="{{ var.kherad }}">{% trans "منظومه خردپژوهان" %}</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="{{ var.instagram }}"><i class="fa-brands fa-instagram"></i></a>
+            <a href="{{ var.telegram }}"><i class="fa-brands fa-telegram"></i></a>
+            <a href="{{ var.whatsapp }}"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="{{ var.linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="toggle">
+
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<section id="home" class="text-white bg-hero-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-12">
+                <h1 class="wow fadeInDown" data-wow-delay=".5s">
+                    {% trans "دکتر بهزاد شوقی" %}
+
+                </h1>
+                <h3>
+                    {% trans " پژوهشگر، تحلیلگر، مشاور، موسس منظومه خرد پژوهان" %}
+                </h3>
+
+                <p class="short-bio wow fadeInDown" data-wow-delay=".6s">
+                    {{ var.aboutme|safe }}
+                </p>
+                <a
+                        href="{{ var.kherad }}"
+                        class="cf-btn wow fadeInDown"
+                        data-wow-delay=".7s"
+                >
+                    {% trans "منظومه خردپژوهان" %}
+
+                </a>
+                <div
+                        class="counter d-flex align-center content-space-between wow fadeInDown"
+                        data-wow-delay="1.7s"
+                >
+                    <div class="experence">
+                        <h2><span class="count">{{ var.number1 }}</span>+</h2>
+                        <p class="font-20px">{{ var.name1 }}</p>
+                    </div>
+                    <div class="project">
+                        <h2><span class="count">{{ var.number2 }}</span>+</h2>
+                        <p class="font-20px">{{ var.name2 }}</p>
+                    </div>
+                    <div class="clients">
+                        <h2><span class="count">{{ var.number3 }}</span>+</h2>
+                        <p class="font-20px">{{ var.name3 }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hero-right">
+                    <div class="hero-right-bg"></div>
+                    <img src="{% static 'images/author/behzad.png' %}" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extra-bg"></div>
+</section>
+<section id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="wow fadeInDown">
+                {% trans "حیطه کاری" %}<br/>
+
+            </h2>
+            <p class="sub-title">{% trans 'برای اطلاعات بیشتر روی کارت ها کلیک کنید' %}</p>
+        </div>
+        <div class="card-container">
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card wow fadeInDown" data-wow-delay=".2s">
+                        <div class="icon-container">
+                            <img src="{% static 'icons/uiux.svg' %}" class="svg" alt=""/>
+                        </div>
+                        <h3>{{ var.what_can_i_do_title1 }}</h3>
+                        <p>
+                            {{ var.wcid_des1|safe }}
+                        </p>
+                        <a href="#services_1" class="link"></a>
+                    </div>
+
+                    <div class="mfp-fade mfp-hide" id="services_1">
+                        <div class="content">
+                            <div class="img">
+                                <img src="{{ var.wcid_img1.url }}" alt=""/>
+                            </div>
+                            <div class="des">
+                                <h4>{{ var.what_can_i_do_title1 }}</h4>
+
+                                <p>
+                                    {{ var.sub_des1|safe }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card wow fadeInDown" data-wow-delay=".3s">
+                        <div class="icon-container">
+                            <img src="{% static 'icons/web_dev.svg' %}" class="svg" alt=""/>
+                        </div>
+                        <h3>{{ var.what_can_i_do_title2 }}</h3>
+                        <p>
+                            {{ var.wcid_des2|safe }}
+                        </p>
+                        <a href="#services_2" class="link"></a>
+
+                        <div class="mfp-fade mfp-hide" id="services_2">
+                            <div class="content">
+                                <div class="img">
+                                    <img src="{{ var.wcid_img2.url }}" alt=""/>
+                                </div>
+                                <div class="des">
+                                    <h4>{{ var.what_can_i_do_title2 }}</h4>
+                                    <p>
+                                        {{ var.sub_des2|safe }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card wow fadeInDown" data-wow-delay=".4s">
+                        <div class="icon-container">
+                            <img
+                                    src="{% static 'icons/product_desginer.svg' %}"
+                                    class="svg"
+                                    alt=""
+                            />
+                        </div>
+                        <h3>{{ var.what_can_i_do_title3 }}</h3>
+                        <p>
+                            {{ var.wcid_des3|safe }}
+                        </p>
+                        <a href="#services_3" class="link"></a>
+
+                        <div class="mfp-fade mfp-hide" id="services_3">
+                            <div class="content">
+                                <div class="img">
+                                    <img src="{{ var.wcid_img3.url }}" alt=""/>
+                                </div>
+                                <div class="des">
+                                    <h4>{{ var.what_can_i_do_title3 }}</h4>
+                                    <p>
+                                        {{ var.sub_des3|safe }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <div class="author-image-container wow fadeInLeft">
+                    <div class="image-bg moving-effect"></div>
+                    <div class="image-area">
+                        <img src="{{ var.aboutme_image.url }}" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 wow fadeInRight">
+                <div class="section-title left">
+                    <p class="sub-title">{% trans 'درباره من' %}</p>
+                    <h2>{{ var.aboutme_title }}</h2>
+                </div>
+                <p>
+                    {{ var.aboutme_des|safe }}
+                </p>
+                <div class="d-flex align-center btn-container">
+                    <a href="#about-popup" class="cf-btn read-more">{% trans 'مطالعه بیشتر' %}</a>
+                    <div class="d-flex watch-video align-center">
+                        <a
+                                href="https://www.aparat.com/"
+                                class="play-btn"
+                        ><i class="fa-solid fa-circle-play"></i
+                        ></a>
+                        <p>{% trans 'مشاهده ویدئو' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-popup" class="mfp-fade mfp-hide">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-image">
+                    <img src="{{ var.aboutme_image.url }}" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h3>{% trans 'بهزاد شوقی' %}</h3>
+                <div class="subtitle subtitle-typed">
+                    <div class="typing-title">
+                        <p>{% trans 'پژوهشگر' %}</p>
+                        <p>{% trans 'تحلیلگر' %}</p>
+                        <p>{% trans 'مشاور' %}</p>
+                        <p>{% trans 'موسس منظومه خرد پژوهان' %}</p>
+                    </div>
+                </div>
+                <p>
+                    {{ var.aboutme_des|safe }}
+                </p>
+                <ul class="about-details">
+                    <li><span>{% trans 'ایمیل :' %}</span>{{ var.email }}</li>
+                    <li><span>{% trans 'آدرس دفتر :' %}</span>{{ var.address }}</li>
+                    <li class="tm-ltr"><span class="tm1">{% trans 'هماهنگی با مسئول دفتر:' %}</span>{{ var.phone }}</li>
+                </ul>
+
+                <a href="{{ var.file }}" class="cf-btn">{% trans 'دانلود رزومه' %}</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <div class="section-title wow fadeInUp">
+            <h2>
+                {% trans 'افتخارات و امتیازات' %}
+
+            </h2>
+            <p class="sub-title">{% trans 'برای اطلاعات بیشتر روی عکس ها کلیک کنید' %}</p>
+
+        </div>
+        <div class="portfolio-container">
+            <div class="filter-btn wow fadeInUp">
+
+            </div>
+            <div class="portfolio-items wow fadeInUp">
+
+
+                {% for vars in var.Job.all %}
+
+                    <div class="item details">
+                        <a href="#details-popup"
+                        ><img src="{{ vars.img1.url }}" alt=""
+                        /></a>
+                        <div class="mfp-fade mfp-hide" id="details-popup">
+                            <div class="content">
+
+                                <div class="des">
+                                    <span>{% trans 'توضیحات' %}</span>
+                                    <h4>{{ vars.title }}</h4>
+                                    <p>
+                                        {{ vars.des|safe }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="testimonials">
+    <div class="container">
+        <div class="testimonials-top wow fadeInUp">
+            <div class="section-title left">
+
+
+            </div>
+            <div class="arrows">
+                <a class="arrow arrow-right active">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <a class="arrow arrow-left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="testimonial-sliders swiper wow fadeInUp">
+            <div class="swiper-wrapper">
+                {% for var in var.Customer.all %}
+
+                    <div class="slider-item swiper-slide">
+                        <div class="slider-item-content">
+                            <p>
+                                {{ var.Customer_opinion|safe }}
+                            </p>
+                            <div class="author-info">
+                                <div class="image-container">
+                                    <img src="{{ var.image.url }}" alt=""/>
+                                </div>
+                                <div class="author-info-content">
+                                    <h3>{{ var.name }}</h3>
+                                    <p class="complay-name">{{ var.des }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<div id="client">
+    <div class="container">
+        <div class="bg-primary client-container wow fadeInUp">
+            <div class="swiper client-slider">
+                <div class="swiper-wrapper">
+                    {% for var in var.image.all %}
+
+                        <div class="swiper-slide">
+                            <a href="{{ var.url }}"><img src="{{ var.image.url }}" alt=""/></a>
+                        </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="blog">
+    <div class="container">
+        <div class="section-title">
+{#            <p class="sub-title">{% trans 'وبلاگ دکتر  بهزاد شوقی' %}</p>#}
+            <h2>
+                {% trans 'وبلاگ دکتر  بهزاد شوقی' %}
+            </h2>
+        </div>
+        <div class="row blog-items">
+            
+
+            {% for var in var.blog.all %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item wow fadeInUp" data-wow-delay=".2">
+                        <div class="blog-image-container">
+                            <a href="#blog-popup-1"
+                            ><img src="{{ var.blog_img.url }}" alt=""
+                            /></a>
+                        </div>
+                        <div class="blog-content">
+                            <p>{{ var.datetime_created|to_jalali:'%Y/%m/%d' }}</p>
+                            <h4>
+                                <a href="#blog-popup-1"
+                                >{{ var.blog_title }}</a
+                                >
+                            </h4>
+                            <p>
+                                {{ var.des }}
+                            </p>
+                        </div>
+                        <div id="blog-popup-1" class="mfp-fade mfp-hide">
+                            <div class="content">
+                                <div class="img">
+                                    <img src="{{ var.blog_img.url }}" alt="dora_img"/>
+                                </div>
+                                <div class="des">
+                                    <p class="category">
+                                       {{ var.datetime_created|to_jalali:'%Y/%m/%d' }}
+                                    </p>
+                                    <h4>{{ var.blog_title }}</h4>
+                                    <p>
+                                        {{ var.sub_des|safe }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+
+            
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row align-center">
+            <div class="col-lg-6 wow fadeInLeft">
+                <div class="section-title left">
+
+                    <h2>{% trans 'ارتباط با دکتر  بهزاد شوقی' %}</h2>
+                </div>
+                <ul class="info-details">
+                    <li>
+                        <h4>{% trans 'ایمیل' %}</h4>
+                        <p>{{ var.email }}</p>
+                    </li>
+                    <li>
+                        <h4>{% trans 'آدرس دفتر' %}</h4>
+                        <p>
+                            {{ var.address }}
+                        </p>
+                    </li>
+                    <li>
+                        <h4>{% trans 'هماهنگی با مسئول دفتر' %}</h4>
+                        <p class="tm-ltr">{{ var.phone }}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <form method="post" class="contact-form wow fadeInRight">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input name="name" type="text" placeholder="{% trans 'نام و نام خانوادگی' %}"/>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" placeholder="{% trans 'ایمیل' %}"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="text" placeholder="{% trans 'متن پیام' %}"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="phone_number" placeholder="{% trans 'شماره همراه' %}"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="cf-btn">{% trans 'ارسال پیام' %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="wow fadeIn">
+    <div class="container">
+        <div class="copy-right-text" style="text-align: center;">
+            <a
+                href="https://parhamrx.ir/"
+                class="cf-btn wow fadeInDown"
+                data-wow-delay=".7s"
+                style="display: inline-block; margin-left: 20px; background-color: black; color: white; border: none;"
+            >
+                {% trans 'ارتباط با سایت برنامه‌نویس' %}
+            </a>
+            <div style="margin-top: 10px;">
+                <p style="margin: 5px 0; color: #f3f3f3;">{% trans 'طراحی شده توسط پرهام رحیمی' %}</p>
+                <p style="margin: 5px 0; color: #f3f3f3;">{% trans 'وبسایت شخصی دکتر بهزاد شوقی | منظومه خرد پژوهان - 1403' %}</p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="progress">
+    <svg
+            class="progress-svg"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+    >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+</div>
+<div class="cursor"></div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded-pkgd.min.js' %}"></script>
+<script src="{% static 'js/isotope-pkgd.min.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/counterup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/scroll-to-top.mini.js' %}"></script>
+<script src="{% static 'js/jquery.nav.min.js' %}"></script>
+<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+<script src="{% static 'js/typed.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const logoLink = document.getElementById('logo-link');
+        let isEnglish = window.location.href.includes('/en/');
+
+        function updateLanguage() {
+            const currentUrl = window.location.href;
+            let newUrl;
+            if (isEnglish) {
+                newUrl = currentUrl.replace('/en/', '/fa/');
+            } else {
+                if (currentUrl.includes('/fa/')) {
+                    newUrl = currentUrl.replace('/fa/', '/en/');
+                } else {
+                    newUrl = currentUrl + (currentUrl.endsWith('/') ? 'en/' : '/en/');
+                }
+            }
+            window.location.href = newUrl;
+        }
+
+        logoLink.addEventListener('click', (event) => {
+            event.preventDefault(); // جلوگیری از رفتار پیش‌فرض لینک
+            updateLanguage();
+            isEnglish = !isEnglish; // تغییر وضعیت زبان
+            logoLink.textContent = isEnglish ? 'EN' : 'FA'; // تغییر متن دکمه
+        });
+
+        // تغییر متن دکمه بر اساس زبان فعلی
+        logoLink.textContent = isEnglish ? 'EN' : 'FA';
+    });
+</script>
+</body>
+
+<!-- Mirrored from axo-html.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Apr 2023 22:33:45 GMT -->
+</html>

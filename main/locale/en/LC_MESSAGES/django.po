@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-10 04:39+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\templates\main\main.html:14
+msgid "وبسایت شخصی دکتر بهزاد شوقی"
+msgstr "Dr. Behzad Shoghi's Personal Website"
+
+#: .\templates\main\main.html:33
+msgid "خدمات"
+msgstr "Services"
+
+#: .\templates\main\main.html:34
+msgid "نمونه کار ها"
+msgstr "Portfolio"
+
+#: .\templates\main\main.html:35
+msgid "وبلاگ"
+msgstr "Blog"
+
+#: .\templates\main\main.html:36 .\templates\main\main.html:450
+msgid "ارتباط با من"
+msgstr "Contact Me"
+
+#: .\templates\main\main.html:37
+msgid "خردپژوهان"
+msgstr "Khordpejohan"
+
+#: .\templates\main\main.html:57
+msgid "دکتر بهزاد شوقی"
+msgstr "Dr. Behzad Shoghi"
+
+#: .\templates\main\main.html:61
+msgid " پژوهشگر، تحلیلگر، مشاور، موسس منظومه خرد پژوهان"
+msgstr "Researcher, Analyst, Consultant, Founder of Khordpejohan"
+
+#: .\templates\main\main.html:72
+msgid "سایت خردپژوهان"
+msgstr "Khordpejohan Site"
+
+#: .\templates\main\main.html:106
+msgid "خدمات من"
+msgstr "My Services"
+
+#: .\templates\main\main.html:108
+msgid "کار هایی که می توانم برای"
+msgstr "The work I can do for"
+
+#: .\templates\main\main.html:109
+msgid "شما انجام بدهم"
+msgstr "You"
+
+#: .\templates\main\main.html:214
+msgid "درباره من"
+msgstr "About Me"
+
+#: .\templates\main\main.html:221
+msgid "مطالعه بیشتر"
+msgstr "Read More"
+
+#: .\templates\main\main.html:228
+msgid "مشاهده ویدئو"
+msgstr "Watch Video"
+
+#: .\templates\main\main.html:242
+msgid "بهزاد شوقی"
+msgstr "Behzad Shoghi"
+
+#: .\templates\main\main.html:245
+msgid "پژوهشگر"
+msgstr "Researcher"
+
+#: .\templates\main\main.html:246
+msgid "تحلیلگر"
+msgstr "Analyst"
+
+#: .\templates\main\main.html:247
+msgid "مشاور"
+msgstr "Consultant"
+
+#: .\templates\main\main.html:248
+msgid "موسس منظومه خرد پژوهان"
+msgstr "Founder of Khordpejohan"
+
+#: .\templates\main\main.html:255
+msgid "سال تولد :"
+msgstr "Year of Birth:"
+
+#: .\templates\main\main.html:256
+msgid "ایمیل :"
+msgstr "Email:"
+
+#: .\templates\main\main.html:257
+msgid "محل سکونت :"
+msgstr "Residence:"
+
+#: .\templates\main\main.html:258
+msgid "تلفن :"
+msgstr "Phone:"
+
+#: .\templates\main\main.html:270
+msgid "دانلود رزومه"
+msgstr "Download Resume"
+
+#: .\templates\main\main.html:278
+msgid "نمونه کار های من"
+msgstr "My Portfolio"
+
+#: .\templates\main\main.html:280
+msgid "تعدادی از بهترین"
+msgstr "A Few of the Best"
+
+#: .\templates\main\main.html:282
+msgid "کار های من"
+msgstr "My Work"
+
+#: .\templates\main\main.html:302
+msgid "توضیحات"
+msgstr "Description"
+
+#: .\templates\main\main.html:326
+msgid "نظرات"
+msgstr "Testimonials"
+
+#: .\templates\main\main.html:328
+msgid "تعدادی از نظرات"
+msgstr "A Few Testimonials"
+
+#: .\templates\main\main.html:330
+msgid "مشتریان من"
+msgstr "My Clients"
+
+#: .\templates\main\main.html:390
+msgid "وبلاگ من"
+msgstr "My Blog"
+
+#: .\templates\main\main.html:392
+msgid "مطالب اخیر من"
+msgstr "My Recent Posts"
+
+#: .\templates\main\main.html:394
+msgid "ترفند، نکته، آموزش و موارد دیگر"
+msgstr "Tips, Tricks, Tutorials, and More"
+
+#: .\templates\main\main.html:451
+msgid "جهت انجام همکاری و سفارش پروژه تماس بگیرید"
+msgstr "Contact me for collaboration and project orders"
+
+#: .\templates\main\main.html:455 .\templates\main\main.html:477
+msgid "ایمیل"
+msgstr "Email"
+
+#: .\templates\main\main.html:459
+msgid "آدرس"
+msgstr "Address"
+
+#: .\templates\main\main.html:465
+msgid "تلفن"
+msgstr "Phone"
+
+#: .\templates\main\main.html:474
+msgid "نام"
+msgstr "Name"
+
+#: .\templates\main\main.html:480
+msgid "متن پیام"
+msgstr "Message Text"
+
+#: .\templates\main\main.html:483
+msgid "شماره تلفن"
+msgstr "Phone Number"
+
+#: .\templates\main\main.html:486
+msgid "ارسال پیام"
+msgstr "Send Message"
+
+#: .\templates\main\main.html:503 .\templates\main\main.html:506
+msgid "رفتن به سایت برنامه‌نویس"
+msgstr "Go to Developer's Site"
+
+#: .\templates\main\main.html:507
+msgid "وبسایت شخصی دکتر بهزاد شوقی | منظومه خرد پژوهان - 1403"
+msgstr "Dr. Behzad Shoghi's Personal Website | Khordpejohan - 2024"
